@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable array-callback-return */
+import { useState, useEffect } from "react";
+
+import { DataStore } from "@aws-amplify/datastore";
+import { Task } from "./models";
+
+import TaskItem from "./components/task-item";
 
 function App() {
+  const [tasks, setTasks] = useState([]);
+
+  const queryTasks = async () => {
+    try {
+      const tasks = await DataStore.query(Task);
+      if (tasks) {
+        console.log("Posts retrieved successfully!", tasks);
+        if (tasks?.length > 0) {
+          setTasks(tasks);
+        }
+      }
+    } catch (error) {
+      console.log("Error retrieving tasks", error);
+    }
+  };
+
+  useEffect(() => {
+    queryTasks();
+    return () => {};
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul>
+        {tasks.map((el, i) => {
+          <TaskItem key={i} title={el} />;
+        })}
+      </ul>
     </div>
   );
 }
