@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+![React Amplify DataStore Banner](https://raw.githubusercontent.com/collectedview/react-amplify-datastore/main/public/react-amplify-datastore.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Amplify DataStore
 
-## Available Scripts
+Connecting React JavaScript applications to a persistent datastore, simplified with modern AWS Amplify DataStore REST APIs.
 
-In the project directory, you can run:
+A barebones application for emulating the connectivity between AWS Amplify DataStore with local and deployed applications.
 
-### `npm start`
+## Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [About](#about)
+- [Build](#build)
+- [Overview](#overview)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+- [Additional](#additional)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About
 
-### `npm test`
+React Amplify DataStore is a template for connecting React Applications to AWS Amplify DataStore.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![GitHub stars](https://img.shields.io/github/stars/collectedview/react-amplify-datastore?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/collectedview?label=Follow&style=social)
 
-### `npm run build`
+- Website: [collectedview.io](https://collectedview.io)
+- Twitter: [@collectedview](https://twitter.com/collectedview)
+- GitHub: [@collectedview](https://github.com/collectedview)
+- LinkedIn: [@collectedview](https://www.linkedin.com/in/collectedview)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Build
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React Amplify DataStore is built with modern frontend frameworks. React JavaScript connects to AWS Amplify DataStore for integrated data.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React.js](https://reactjs.org/)
+- [AWS Amplify](https://aws.amazon.com/amplify/)
+- [AWS Amplify DataStore](https://docs.amplify.aws/lib/datastore/getting-started/q/platform/js/)
+- [Node.js](https://nodejs.org/en/)
 
-### `npm run eject`
+## Overview
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Requirements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project runs on Node.js while the DOM UI elements are established using React.js with data models from AWS Amplify, while working within the Create React App framework.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React (v18.2.0)
+- Amplify (v5.0.25)
+- Node (v20.0.0)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+- **Option 1.)** [Download the latest version of this template from GitHub](https://github.com/collectedview/react-amplify-datastore/archive/refs/heads/main.zip)
+- **Option 2.)** Clone this repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+                  git clone https://github.com/collectedview/react-amplify-datastore.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Option 3.)** [Fork, Clone, or Download via GitHub Desktop](x-github-client://openRepo/https://github.com/collectedview/react-amplify-datastore)
 
-### Code Splitting
+### Basic Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##### Install
 
-### Analyzing the Bundle Size
+```sh
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+##### Start
 
-### Making a Progressive Web App
+```sh
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Additional
 
-### Advanced Configuration
+##### Bugs and Issues
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Having an issue with the template? Report bugs & issues with React Amplify DataStore on GitHub via [Issues](https://github.com/collectedview/react-amplify-datastore/issues). Fork, Pull, or Send an email over to join as a contributor! Join in on the open source conversation on [Twitter](https://twitter.com/collectedview).
 
-### Deployment
+##### Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Create React App](https://create-react-app.dev/)
+- [Amplify](https://aws.amazon.com/amplify/)
+- [YouTube](https://youtu.be/wH-UnQy1ltM)
 
-### `npm run build` fails to minify
+##### Additional Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##### License
+
+© 2023 React Amplify DataStore released via [MIT](https://opensource.org/licenses/MIT) license. Information on this license can be viewed as it applies to this repository on GitHub at [React Amplify DataStore License](https://github.com/collectedview/react-amplify-datastore/blob/main/LICENSE).

@@ -1,5 +1,5 @@
 {
-  "name": "react-amplify",
+  "name": "react-amplify-datastore",
   "version": "1.0.0",
   "private": true,
   "dependencies": {

@@ -1,4 +1,3 @@
-/* eslint-disable array-callback-return */
 import { useState, useEffect } from "react";
 
 import { DataStore } from "@aws-amplify/datastore";
@@ -11,11 +10,11 @@ function App() {
 
   const queryTasks = async () => {
     try {
-      const tasks = await DataStore.query(Task);
-      if (tasks) {
-        console.log("Posts retrieved successfully!", tasks);
-        if (tasks?.length > 0) {
-          setTasks(tasks);
+      const models = await DataStore.query(Task);
+      if (models) {
+        console.log("Models retrieved successfully!", models);
+        if (models?.length > 0) {
+          return setTasks(models);
         }
       }
     } catch (error) {
@@ -31,8 +30,15 @@ function App() {
   return (
     <div className="App">
       <ul>
-        {tasks.map((el, i) => {
-          <TaskItem key={i} title={el} />;
+        {tasks.map(({ id, title, description, status }) => {
+          return (
+            <TaskItem
+              key={id}
+              title={title}
+              description={description}
+              status={status}
+            />
+          );
         })}
       </ul>
     </div>
